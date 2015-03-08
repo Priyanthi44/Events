@@ -1,0 +1,135 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#24B3FF"
+    android:layout_gravity="center"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/launcher"
+       android:layout_gravity="center" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:text="Item "
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
+
+
+      <TextView
+          android:background="#ffce6853"
+          android:id="@+id/event"
+          android:layout_width="wrap_content"
+          android:text="Event "
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+android:gravity="center_horizontal"
+          android:layout_alignLeft="@+id/eventDate"
+
+
+          android:layout_gravity="center_horizontal" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiration Date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
+
+
+      <TextView
+          android:background="#ffce6853"
+          android:id="@+id/eventDate"
+          android:text="Event "
+          android:layout_width="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_gravity="center_horizontal" />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+          android:background="#ffce6853"
+
+          android:layout_width="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:layout_gravity="center_horizontal" />
+  </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Remind Me in"
+        />
+        <Spinner
+            android:background="#ffce6853"
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:entries="@array/days"
+            android:spinnerMode="dropdown" /></LinearLayout>
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fffffb5d"
+        android:layout_margin="10dp"
+
+        android:layout_marginBottom="70dp"
+
+        android:text="Proceed" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_undo"
+            android:id="@+id/home" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_select_all"
+            android:id="@+id/back" />
+    </LinearLayout>
+</LinearLayout>

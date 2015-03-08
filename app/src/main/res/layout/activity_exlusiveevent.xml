@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#24B3FF"
+    android:weightSum="4"
+    tools:context="com.qrcode.eventmanager.mainscreen"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#24B3FF"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/imageView"
+    android:src="@drawable/launcher" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_gravity="center"
+        android:background="#fffffff7"
+        android:id="@+id/event" />
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#fffffb5d"
+android:layout_margin="10dp"
+android:text="General Offers"
+android:id="@+id/btnparty" />
+
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#fffffb5d"
+android:layout_margin="10dp"
+android:text="Special Offers"
+
+android:id="@+id/btnafterparty" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_undo"
+            android:id="@+id/home" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_select_all"
+            android:id="@+id/back" />
+    </LinearLayout>
+</LinearLayout>

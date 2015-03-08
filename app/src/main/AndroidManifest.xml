@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.code.qr.events" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="ShopSistancE"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+
+            android:label="ShopSistancE" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainscreen"
+            android:label="ShopSistancE" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".reminder"
+            android:label="Food Expiration Reminder" >
+        </activity>
+        <activity
+            android:name=".scanner"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_scanner" >
+        </activity>
+        <activity
+            android:name=".result"
+            android:screenOrientation="portrait"
+            android:label="Scanned Code" >
+        </activity>
+        <activity
+            android:name=".viewlist"
+            android:screenOrientation="portrait"
+            android:label="View Scanned Items" >
+        </activity>
+        <activity
+            android:name=".exclusiveevents"
+            android:screenOrientation="portrait"
+            android:label="Offers" >
+        </activity>
+        <activity
+            android:name=".choosevent"
+            android:screenOrientation="portrait"
+            android:label="Choose Store" >
+        </activity>
+        <activity
+            android:name=".exlusiveevent"
+            android:screenOrientation="portrait"
+            android:label="ShopSistancE" >
+        </activity>
+        <activity
+            android:name=".afterevent"
+            android:screenOrientation="portrait"
+            android:label="ShopSistancE" >
+        </activity>
+
+        <service android:name=".Notification.ScheduleService" />
+        <service android:name=".Notification.NotifyService" />
+    </application>
+
+</manifest>

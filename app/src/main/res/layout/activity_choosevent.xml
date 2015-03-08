@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24B3FF"
+    android:orientation="vertical"
+
+    android:weightSum="4"
+    tools:context="com.qrcode.eventmanager.mainscreen"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#26466D"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"
+        android:src="@drawable/launcher" />
+
+    <Spinner
+        android:background="#fffffb5d"
+        android:id="@+id/event"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:entries="@array/events"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffffb5d"
+
+        android:layout_margin="10dp"
+        android:text="Go"
+
+        android:id="@+id/btnchoose" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_undo"
+            android:id="@+id/home" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_select_all"
+            android:id="@+id/back" />
+    </LinearLayout>
+</LinearLayout>

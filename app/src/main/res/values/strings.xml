@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"Event Management "</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mainscreen">Event Manager</string>
+    <string name="title_activity_reminder">Event Management</string>
+    <string name="title_activity_scanner">Scanning....</string>
+    <string name="title_activity_result">Reminder</string>
+    <string name="title_activity_viewlist">Events List</string>
+    <string name="scan_from_fragment">Scan </string>
+
+    <string-array name="days">
+        <item>One Day</item>
+        <item>Two Days</item>
+        <item>Three Days</item>
+        <item>Four Days</item>
+        <item>Five Days</item>
+        <item>Six Days</item>
+        <item>Seven Days</item>
+    </string-array>
+    <string-array name="events">
+        <item>Store 1</item>
+        <item>Store 2</item>
+        <item>Store 3</item>
+        <item>Store 4</item>
+        <item>Store 5</item>
+    </string-array>
+
+    <string name="title_activity_exclusiveevents">exclusiveevents</string>
+    <string name="title_activity_choosevent">choosevent</string>
+    <string name="title_activity_exlusiveevent">Exclusive Event</string>
+    <string name="title_activity_afterevent">Event Functions</string>
+    <string name="title_activity_weblink">Event</string>
+
+</resources>
